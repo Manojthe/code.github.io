@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-title {
+            color: white;
+            font-size: 20px;
+        }
+
+        .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .telegram-icon {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .telegram-icon:hover {
+            color: #0088cc; /* Change to your desired hover color */
+        }
+
+        .round-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .content {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .button {
+            display: inline-block;
+           
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+            width: 45%; /* Adjust width as needed */
+        }
+
+        .button-red {
+            background-color: red;
+            color: white;
+             margin-right: 10px;
+            border: 2px solid red;
+        }
+
+        .button-black {
+            background-color: black;
+            color: white;
+            border: 2px solid red;
+        }
+
+        .button:hover {
+            background-color: #333;
+        }
+
+        .button:hover .fa {
+            color: white;
+        }
+
+        @media screen and (max-width: 600px) {
+            .button {
+                width: 100%;
+            }
+        }
+        
+        
+        
+          .video-player {
+            width: 98%;
+            border: 1px solid white;
+            margin-left:5px;
+            margin-top:5px;
+           
+            border-radius: 5px;
+            
+            }
+            
+            
+            
+              .chip-container {
+            overflow-x: scroll;
+            white-space: nowrap;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+            scrollbar-width: thin; /* For Firefox */
+        }
+
+        .chip-container::-webkit-scrollbar {
+            width: 1px; /* Width of the scrollbar */
+        }
+
+        .chip-container::-webkit-scrollbar-track {
+            background-color: transparent; /* Track color */
+        }
+
+        .chip-container::-webkit-scrollbar-thumb {
+            background-color: red; /* Thumb color */
+            border-radius: 0px; /* Rounded corners */
+        }
+
+        .chip {
+            display: inline-block;
+            padding: 8px 16px;
+            margin-right: 10px;
+            background-color: #333;
+            color: white;
+            border-radius: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-decoration: none; /* Remove underline */
+        }
+
+        .chip:hover {
+            background-color: #0288d1;
+        }
+
+        .video-player-name {
+            font-size: 18px;
+           margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            color: white; /* Text color */
+        }
+            
+            
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <span class="navbar-title">File to Link og Bot</span>
+        </div>
+        <div class="navbar-right">
+            <a href="#" class="telegram-icon"><i class="fab fa-telegram"></i></a>
+            <img src="your_image_url_here.jpg" alt="Round Image" class="round-image">
+        </div>
+    </nav>
+    
+    
+     <div class="contentvideo">
+    
+     <video class="video-player" controls>
+            <source src="your_video_url_here.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+    </div>
+    
+    
+    
+   
+
+    <div class="content">
+        <button class="button button-red"><i class="fas fa-play"></i> PLAY</button>
+        <button class="button button-black"><i class="fas fa-download"></i> Download</button>
+    </div>
+    
+    
+    
+    
+     <div class="video-player-name">External Players</div>
+
+    <div class="chip-container">
+        <a href="https://www.videolan.org/vlc/" class="chip">VLC</a>
+        <a href="https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.ad" class="chip">MX Player</a>
+        <a href="https://play.google.com/store/apps/details?id=me.download.playit" class="chip">Playit</a>
+        <a href="https://play.google.com/store/apps/details?id=com.bsplayer.bspandroid.free" class="chip">BSPlayer</a>
+        <a href="https://play.google.com/store/apps/details?id=com.kmplayer" class="chip">KMPlayer</a>
+        <a href="https://play.google.com/store/apps/details?id=com.maxmpz.audioplayer" class="chip">Poweramp</a>
+        <a href="https://play.google.com/store/apps/details?id=com.newin.nplayer" class="chip">nPlayer</a>
+        <a href="https://play.google.com/store/apps/details?id=com.flvplayer.videoplayer" class="chip">XPlayer</a>
+        <a href="https://play.google.com/store/apps/details?id=com.ventismedia.android.mediamonkey" class="chip">MediaMonkey</a>
+        <a href="https://play.google.com/store/apps/details?id=com.gretech.gomplayerko" class="chip">GOM Player</a>
+    </div>
+    
+    
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
